@@ -1,0 +1,54 @@
+.hero-container {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  background-color: black;
+  background-image: url("images/R.jpg");
+  background-repeat: no-repeat;
+  background-size: 100rem 422px;
+}
+
+.Title-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+  color: red;
+  font-size: 2.7rem;
+}
+
+.Text-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+  font-size: 1.5rem;
+  color: #00003f;
+}
+
+span::before {
+  content: "";
+  animation: animate infinite 35s;
+  animation-iteration-count: infinite;
+ 
+}
+
+@keyframes animate {
+  0% {
+    content: "An investment in knowledge pays the best interest.";
+  }
+
+  50% {
+    content: "Change is the end result of all true learning.";
+  }
+
+  75% {
+    content: "The roots of education are bitter, but the fruit is sweet.";
+  }
+
+  100% {
+    content: "They know enough who know how to learn.";
+  }
+}
